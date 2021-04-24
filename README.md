@@ -35,19 +35,19 @@ Deploying EFK, Prometheus and Grafana on Kubernetes Cluster using Helm Chart
 
 
 ### Build Instructions
-- To deploye EFK stack
+- To deploy EFK stack
 ```
  $ helm install logging --namespace logging ./efk-stack/
 ```
 
-- To deploye Prometheus
+- To deploy Prometheus
 ```
  $ helm install prometheus --namespace monitoring ./prometheus/
 ```
 
-- To deploye Grafana
+- To deploy Grafana
 ```
- $helm install grafana --namespace monitoring ./grafana/
+ $ helm install grafana --namespace monitoring ./grafana/
 ```
 
 <b>Note</b>: Change variables value according to need in values.yaml
@@ -65,5 +65,5 @@ Deploying EFK, Prometheus and Grafana on Kubernetes Cluster using Helm Chart
 
 - To destroy Grafana
 ```
- $helm delete grafana --namespace monitoring
+ $ helm delete grafana --namespace monitoring
 ```
