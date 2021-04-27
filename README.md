@@ -35,6 +35,12 @@ Deploying EFK, Prometheus and Grafana on Kubernetes Cluster using Helm Chart
 
 
 ### Build Instructions
+
+- Create namespace for logging and monitoring
+```
+$ kubectl create namespace monitoring --dry-run -o yaml | kubectl apply -f -
+$ kubectl create namespace logging --dry-run -o yaml | kubectl apply -f -
+```
 - To deploy EFK stack
 ```
  $ helm install logging --namespace logging ./efk-stack/
